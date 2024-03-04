@@ -1,0 +1,1478 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- css -->
+  <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
+  <link rel="stylesheet" href="{% static 'fonts/all.min.css' %}">
+  <link rel="stylesheet" href="{% static 'fonts/fontawesome.css' %}">
+  <link rel="stylesheet" href="{% static 'fonts/fonts-6/css/all.css' %}">
+  <link rel="stylesheet" href="{% static 'fonts/word-fonts/Nelphim-Regular 400.otf' %}">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+
+
+  <!-- custom css -->
+  <link rel="stylesheet" href="{% static 'css/main.css' %}">
+  <link rel="stylesheet" href="{% static 'css/responsive.css' %}">
+  <!-- css -->
+  <title>PS Castle</title>
+</head>
+
+<body>
+  <!-- hero page start -->
+  
+  <div class="hero">
+    <div class="mob-slider">
+      <div id="carouselExampleSlidesOnly" class="carousel mob-slid slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active mob-carousel">
+            <img src="{% static 'images/main-header-img.png' %}" alt="" class="img-fluid w-100">
+          </div>
+          <div class="carousel-item mob-carousel">
+            <img src="{% static 'images/bg-2.png' %}" alt="" class="img-fluid w-100">
+          </div>
+          <div class="carousel-item  mob-carousel">
+            <img src="{% static 'images/bg-3.png' %}" alt="" class="img-fluid w-100">
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="hero-bg">
+      <img src="{% static 'images/main-header-img.png' %}" alt="" class="bg-1">
+      <img src="{% static 'images/bg-2.png' %}" alt="" class="bg-2">
+      <img src="{% static 'images/bg-3.png' %}" alt="" class="bg-3">
+    </div>
+    <!-- navbar -->
+    <nav class="navbar fixed-top navbar-expand-lg">
+      <div class="container">
+        <a class="navbar-brand" href="#">PS Castle</a>
+        <button class="nav-btn" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="act-btn"><img src="{% static 'images/hamburg.svg' %}" alt=""></span>
+          <span class="error-btn text-white"><img src="{% static 'images/cross.svg' %}" alt=""></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto ">
+            <li class="nav-item active-nav">
+              <a class="nav-link " aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#about">About us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Buy</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Contact</a>
+            </li>
+
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- navbar -->
+
+    <!-- enquery form start -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-body">
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            <center>
+              <h2 class="" style="color: #513c25;">Enquire Now</h2>
+              <p class="text-dark quot-p">PS Castle Amazing spaces to create durable and innovative
+                experience </p>
+              <form action="" class="quot-form">
+                <div class="quot-anim-con">
+                  <label for="username" class="label-focus1">Full Name</label>
+                  <input type="text" name="" id="username" class="focus-inp1" required>
+                </div>
+                <div class="quot-anim-con">
+                  <label for="number" class="label-focus2">Mobile Number</label>
+                  <input type="number" name="" id="number" class="focus-inp2" required>
+                </div>
+                <div class="quot-anim-con">
+                  <label for="email" class="label-focus3">Email</label>
+                  <input type="email" name="" id="email" class="focus-inp3">
+                </div>
+
+                <div class="quot-anim-con">
+                  <label for="location" class="label-focus4">Location</label>
+                  <input type="text" name="" id="location" class="focus-inp4">
+
+                </div>
+                <div class="quot-anim-con">
+                  <label for="enquries" class="label-focus5">Enquire Now</label>
+                  <input type="email" name="" id="enquries" class="focus-inp5">
+                </div>
+
+                <button type="submit" class="s-btn">
+                  <div class="">
+                    <div class="primary-btn-sub quot-btn">
+                      Submit
+                    </div>
+                  </div>
+                </button>
+              </form>
+            </center>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- enquery form end -->
+    <div class="blob"></div>
+
+    <div class="main_head">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6 main-left">
+            <h1 class="main-head-text text-white">
+              Discover your <br>
+              Luxury home
+            </h1>
+            <h5 class="main-h5">Exceptional Contemporary Living</h5>
+            <button class="primary-btn" data-bs-toggle="modal" data-bs-target="#exampleModal">
+              Enquire now
+            </button>
+            <a href="#subhead">
+              <div class="down-arrow-btn">
+              </div>
+            </a>
+          </div>
+          <div class="col-md-6 main-right">
+            <div class="btn-background-changes">
+              <div class="img-1-bg">
+                <img src="{% static 'images/bg-btn-1.png' %}" alt="" class="img-fluid">
+              </div>
+              <div class="img-2-bg">
+                <img src="{% static 'images/main-bg-2.png' %}" alt="" class="img-fluid">
+              </div>
+              <div class="img-3-bg">
+                <img src="{% static 'images/main-bg-1.png' %}" alt="" class="img-fluid">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="mob-padding">
+    <section id="subhead">
+      <div class="container">
+        <!--  -->
+        <!-- <div class="circl-rotation">
+    <img src="{% static 'images/circl-rotate.svg' %}" alt="">
+  </div> -->
+        <!--  -->
+        <div class="sub_head mt-5">
+          <h2 class="subhead-text">Why choose us</h2>
+        </div>
+        <div class="row">
+          <div class="col-md-6">
+            <h6 class="my-4 sub_head_mini reveal fade-wave" data-wow-delay="0.1s">
+              Assisting individuals in locating <br> the appropriate real estate.
+            </h6>
+            <p>
+              Buying a home doesn’t need to be a thousand tiny decisions. We’ve simplified the process with a home that
+              has climate‑resilient and low‑maintenance features you want and many features you didn’t even know you
+              needed.
+            </p>
+
+            <div class="list-choose">
+              <div class="img-circl">
+                <img src="{% static 'images/competive-price.svg' %}" alt="">
+              </div>
+              <span class="choose-text">competitive price</span>
+            </div>
+            <div class="list-choose">
+              <div class="img-circl">
+                <img src="{% static 'images/ontime.svg' %}" alt="">
+              </div>
+              <span class="choose-text">On time</span>
+            </div>
+            <div class="list-choose">
+              <div class="img-circl">
+                <img src="{% static 'images/best-materials.svg' %}" alt="">
+              </div>
+              <span class="choose-text">Best Materials</span>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="row d-flex dg">
+              <div class="col" style="margin-top: 20px;">
+                <div class="img-1-choose">
+                  <img src="{% static 'images/choose-fr-1.svg' %}" alt="" class="img-fluid">
+                </div>
+              </div>
+              <div class="col" style="margin-top:-20px ;">
+                <img src="{% static 'images/choose-fr-2.svg' %}" alt="" class="img-fluid ">
+                <img src="{% static 'images/choose-fr-3.svg' %}" alt="" class="img-fluid" style="margin-top: 15px;">
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="bg-differnts" id="about">
+      <div class="container">
+        <div class="sub_head mt-5">
+          <h2 class="subhead-text">About us</h2>
+        </div>
+        <div class="row">
+          <div class="col-md-5">
+            <h6 class="sub_head_mini" style="margin-top: 40px;">
+              Assisting individuals in locating <br> the appropriate real estate.
+            </h6>
+            <p>
+              We’re busy working on new up and coming builds. Watch this space for more information or check out our
+              portfolio. busy working on new up and coming builds. Watch this space for more information or check out
+              our
+              portfolio
+            </p>
+
+            <button class="primary-btn">
+              <span class="" style="color: #513c25;">Know More</span>
+            </button>
+          </div>
+          <div class="col-md-1">
+            <div class="circl-rotation">
+              <img src="{% static 'images/circl-rotate.svg' %}" alt="">
+            </div>
+          </div>
+          <div class="col-md-6 about-img">
+            <img src="{% static 'images/aboutus-img.svg' %}" alt="" class="img-fluid">
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+  <section class="intersting">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-3 intersting-left">
+          <div class="sub_headTwo ">
+            <h2 class="subhead-text">
+              Some Interesting <br>
+              Facts
+            </h2>
+            <h3></h3>
+          </div>
+        </div>
+        <div class="col-md-9 intersting-right">
+          <h2 class="intersting-secont-title text-center">
+            13 of the Year’s Best Wines from Around the Tamilnadu
+          </h2>
+          <div class="row d-flex align-items-center justify-content-between">
+            <div class="col">
+              <div class="count-box">
+                <div class="count" akhi="462">0</div>
+                <h6>Completed Projects</h6>
+              </div>
+            </div>
+            <div class="col">
+              <div class="count-box">
+                <div class="count" akhi="168">0</div>
+                <h6>Happy Customers</h6>
+              </div>
+            </div>
+            <div class="col">
+              <div class="count-box">
+                <div class="count" akhi="234">0</div>
+                <h6>On Going projects</h6>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <div class="mob-padding">
+    <section class="feature-listing">
+      <div class="container">
+        <div class="sub_head ">
+          <h2 class="subhead-text">
+            Featured Listing
+          </h2>
+        </div>
+        <div class="row">
+          <div class="col-md-2"></div>
+          <div class="col-md-8">
+            <div class="text-center feature-center">
+              We’re busy working on new up and coming builds. Watch this space for more information or check out our
+              portfolio.
+            </div>
+          </div>
+          <div class="col-md-2">
+            <div class="inter-lin">
+              <div class="" style='height: 100px;'></div>
+              <div class="feature-listing-circl">
+                <a href="" class="view-btn">
+                  <img src="{% static 'images/view-more.svg' %}" alt="" class="img-view-more">
+                  <span class="">View <br> More</span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row mx-auto my-auto justify-content-center">
+          <div id="recipeCarousel" class="carousel sliderOne slide" data-bs-ride="carousel">
+            <div class="carousel-inner" role="listbox">
+              <div class="carousel-item newcarousel active">
+                <div class="col-md-4">
+                  <div class="box-zoomer">
+                    <img src="{%static 'images/featuer-proj.svg' %}" alt="" class="">
+                    <div class="box-zoomer-front">
+                      <div class="top-zoomer">
+                        <h6>Under Construction</h6>
+                      </div>
+                      <div class="bottom-zoomer">
+                        <div class="row">
+                          <div class="col-6">
+                            <div class="bottom-cor">
+                              <span>
+                                2BHK Individual home
+                              </span><br><br>
+                              <span>₹ 21,0000</span>
+                            </div>
+                          </div>
+                          <div class="col-6 d-flex align-items-center justify-content-between">
+                            <span class="construction-icon"><img src="{% static 'images/bed.svg'  %}" alt=""> 4
+                              Beds</span>
+                            <span class="construction-icon"><img src="{% static 'images/bath.svg'  %}" alt=""> 3
+                              Bath</span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item newcarousel">
+                <div class="col-md-4">
+                  <div class="box-zoomer">
+                    <img src="{%static 'images/un-cons-1.svg' %}" alt="" class="">
+                    <div class="box-zoomer-front">
+                      <div class="top-zoomer">
+                        <h6>Under Construction</h6>
+                      </div>
+                      <div class="bottom-zoomer">
+                        <div class="row">
+                          <div class="col-6">
+                            <div class="bottom-cor">
+                              <span>
+                                2BHK Individual home
+                              </span><br><br>
+                              <span>₹ 21,0000</span>
+                            </div>
+                          </div>
+                          <div class="col-6 d-flex align-items-center justify-content-between">
+                            <span class="construction-icon"><img src="{% static 'images/bed.svg'  %}" alt=""> 4
+                              Beds</span>
+                            <span class="construction-icon"><img src="{% static 'images/bath.svg'  %}" alt=""> 3
+                              Bath</span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item newcarousel">
+                <div class="col-md-4">
+                  <div class="box-zoomer">
+                    <img src="{%static 'images/un-cons-3.png' %}" alt="" class="">
+                    <div class="box-zoomer-front">
+                      <div class="top-zoomer">
+                        <h6>Under Construction</h6>
+                      </div>
+                      <div class="bottom-zoomer">
+                        <div class="row">
+                          <div class="col-6">
+                            <div class="bottom-cor">
+                              <span>
+                                2BHK Individual home
+                              </span><br><br>
+                              <span>₹ 21,0000</span>
+                            </div>
+                          </div>
+                          <div class="col-6 d-flex align-items-center justify-content-between">
+                            <span class="construction-icon"><img src="{% static 'images/bed.svg'  %}" alt=""> 4
+                              Beds</span>
+                            <span class="construction-icon"><img src="{% static 'images/bath.svg'  %}" alt=""> 3
+                              Bath</span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item newcarousel">
+                <div class="col-md-4">
+                  <div class="box-zoomer">
+                    <img src="{%static 'images/un-cons-4.png' %}" alt="" class="">
+                    <div class="box-zoomer-front">
+                      <div class="top-zoomer">
+                        <h6>Under Construction</h6>
+                      </div>
+                      <div class="bottom-zoomer">
+                        <div class="row">
+                          <div class="col-6">
+                            <div class="bottom-cor">
+                              <span>
+                                2BHK Individual home
+                              </span><br><br>
+                              <span>₹ 21,0000</span>
+                            </div>
+                          </div>
+                          <div class="col-6 d-flex align-items-center justify-content-between">
+                            <span class="construction-icon"><img src="{% static 'images/bed.svg'  %}" alt=""> 4
+                              Beds</span>
+                            <span class="construction-icon"><img src="{% static 'images/bath.svg'  %}" alt=""> 3
+                              Bath</span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+        
+
+            </div>
+            <a class="carousel-control-prev bg-transparent w-aut" href="#recipeCarousel" role="button"
+              data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            </a>
+            <a class="carousel-control-next bg-transparent w-aut" href="#recipeCarousel" role="button"
+              data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="container">
+        <div class="sub_head ">
+          <h2 class="subhead-text">
+            Completed Projects
+          </h2>
+        </div>
+        <div class="row">
+          <div class="col-md-2"></div>
+          <div class="col-md-8">
+            <div class="text-center feature-center">
+              We’re busy working on new up and coming builds. Watch this space for more information or check out our
+              portfolio.
+            </div>
+          </div>
+          <div class="col-md-2"></div>
+        </div>
+
+        <!-- carousel- demos -->
+
+        <div class="row mx-auto my-auto justify-content-center">
+          <div id="recipeCarouselTwo" class="carousel sliderTwo slide" data-bs-ride="carousel">
+            <div class="carousel-inner car-lin" role="listbox">
+              <div class="carousel-item newcarouselTwo active">
+                <div class="col-md-4">
+                  <div class="box-zoomer">
+                    <img src="{%static 'images/featuer-proj.svg' %}" alt="" class="">
+                    <div class="box-zoomer-front">
+                      <div class="top-zoomer">
+                        <h6> For Sale</h6>
+                      </div>
+                      <div class="bottom-zoomer">
+                        <div class="row">
+                          <div class="col-6">
+                            <div class="bottom-cor">
+                              <span>
+                                2BHK Individual home
+                              </span><br><br>
+                              <span>₹ 21,0000</span>
+                            </div>
+                          </div>
+                          <div class="col-6 d-flex align-items-center justify-content-between">
+                            <span class="construction-icon"><img src="{% static 'images/bed.svg'  %}" alt=""> 4
+                              Beds</span>
+                            <span class="construction-icon"><img src="{% static 'images/bath.svg'  %}" alt=""> 3
+                              Bath</span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item newcarouselTwo">
+                <div class="col-md-4">
+                  <div class="box-zoomer">
+                    <img src="{%static 'images/c-proj-2.svg' %}" alt="" class="">
+                    <div class="box-zoomer-front">
+                      <div class="top-zoomer">
+                        <h6> For Sale</h6>
+                      </div>
+                      <div class="bottom-zoomer">
+                        <div class="row">
+                          <div class="col-6">
+                            <div class="bottom-cor">
+                              <span>
+                                2BHK Individual home
+                              </span><br><br>
+                              <span>₹ 21,0000</span>
+                            </div>
+                          </div>
+                          <div class="col-6 d-flex align-items-center justify-content-between">
+                            <span class="construction-icon"><img src="{% static 'images/bed.svg'  %}" alt=""> 4
+                              Beds</span>
+                            <span class="construction-icon"><img src="{% static 'images/bath.svg'  %}" alt=""> 3
+                              Bath</span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item newcarouselTwo">
+                <div class="col-md-4">
+                  <div class="box-zoomer">
+                    <img src="{%static 'images/c-proj-3.svg' %}" alt="" class="">
+                    <div class="box-zoomer-front">
+                      <div class="top-zoomer">
+                        <h6> For Sale</h6>
+                      </div>
+                      <div class="bottom-zoomer">
+                        <div class="row">
+                          <div class="col-6">
+                            <div class="bottom-cor">
+                              <span>
+                                2BHK Individual home
+                              </span><br><br>
+                              <span>₹ 21,0000</span>
+                            </div>
+                          </div>
+                          <div class="col-6 d-flex align-items-center justify-content-between">
+                            <span class="construction-icon"><img src="{% static 'images/bed.svg'  %}" alt=""> 4
+                              Beds</span>
+                            <span class="construction-icon"><img src="{% static 'images/bath.svg'  %}" alt=""> 3
+                              Bath</span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item newcarouselTwo">
+                <div class="col-md-4">
+                  <div class="box-zoomer">
+                    <img src="{%static 'images/c-proj-4.svg' %}" alt="" class="img-fluid">
+                    <div class="box-zoomer-front">
+                      <div class="top-zoomer">
+                        <h6> For Sale</h6>
+                      </div>
+                      <div class="bottom-zoomer">
+                        <div class="row">
+                          <div class="col-6">
+                            <div class="bottom-cor">
+                              <span>
+                                2BHK Individual home
+                              </span><br><br>
+                              <span>₹ 21,0000</span>
+                            </div>
+                          </div>
+                          <div class="col-6 d-flex align-items-center justify-content-between">
+                            <span class="construction-icon"><img src="{% static 'images/bed.svg'  %}" alt=""> 4
+                              Beds</span>
+                            <span class="construction-icon"><img src="{% static 'images/bath.svg'  %}" alt=""> 3
+                              Bath</span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item newcarouselTwo">
+                <div class="col-md-4">
+                  <div class="box-zoomer">
+                    <img src="{%static 'images/c-proj-5.svg' %}" alt="" class="">
+                    <div class="box-zoomer-front">
+                      <div class="top-zoomer">
+                        <h6> For Sale</h6>
+                      </div>
+                      <div class="bottom-zoomer">
+                        <div class="row">
+                          <div class="col-6">
+                            <div class="bottom-cor">
+                              <span>
+                                2BHK Individual home
+                              </span><br><br>
+                              <span>₹ 21,0000</span>
+                            </div>
+                          </div>
+                          <div class="col-6 d-flex align-items-center justify-content-between">
+                            <span class="construction-icon"><img src="{% static 'images/bed.svg'  %}" alt=""> 4
+                              Beds</span>
+                            <span class="construction-icon"><img src="{% static 'images/bath.svg'  %}" alt=""> 3
+                              Bath</span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item newcarouselTwo">
+                <div class="col-md-4">
+                  <div class="box-zoomer">
+                    <img src="{%static 'images/c-proj-6.svg' %}" alt="" class="">
+                    <div class="box-zoomer-front">
+                      <div class="top-zoomer">
+                        <h6> For Sale</h6>
+                      </div>
+                      <div class="bottom-zoomer">
+                        <div class="row">
+                          <div class="col-6">
+                            <div class="bottom-cor">
+                              <span>
+                                2BHK Individual home
+                              </span><br><br>
+                              <span>₹ 21,0000</span>
+                            </div>
+                          </div>
+                          <div class="col-6 d-flex align-items-center justify-content-between">
+                            <span class="construction-icon"><img src="{% static 'images/bed.svg'  %}" alt=""> 4
+                              Beds</span>
+                            <span class="construction-icon"><img src="{% static 'images/bath.svg'  %}" alt=""> 3
+                              Bath</span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+            <a class="carousel-control-prev bg-transparent w-aut" href="#recipeCarouselTwo" role="button"
+              data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            </a>
+            <a class="carousel-control-next bg-transparent w-aut" href="#recipeCarouselTwo" role="button"
+              data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            </a>
+          </div>
+        </div>
+
+        <!-- carousel- demos -->
+
+      </div>
+    </section>
+    <section class="bg-differnts">
+      <div class="container">
+        <div class="sub_head ">
+          <h2 class="subhead-text">
+            Always check our latest blog
+          </h2>
+        </div>
+        <div class="row" style="margin-top: 100px;">
+          <div class="col-md-6">
+            <div class="blog-fir-img">
+              <img src="{% static 'images/latest.svg' %}" alt="" class="img-fluid">
+              <div class="blog-img-bottom">
+                <div class="">
+                  <img src="{% static 'images/customer-profile.svg' %}" alt="">
+                </div>
+                <div class="admin-img">
+                  <p>Yusuf firdaus</p>
+                  <small>admin</small>
+                </div>
+              </div>
+            </div>
+            <div class="admin-bottom-text">
+              <p>Tips and tricks in choosing a house</p>
+              <small>tips and tricks to buy a house easily here is to buy at a low price</small>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="row latest-blogs">
+              <div class="col">
+                <div class="latest-scenes">
+                  <div class="">
+                    <h4>
+                      Creating a clean
+                      and elegant home
+                    </h4>
+                    <small>Albert firdaus</small>
+                  </div>
+                  <div class="">
+                    <img src="{% static 'images/latest-1.svg' %}" alt="" class="img-fluid">
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="latest-scenes">
+                  <div class="">
+                    <h4>
+                      Good paint color for home
+                    </h4>
+                    <small>Rusy firdaus</small>
+                  </div>
+                  <div class="">
+                    <img src="{% static 'images/latest-2.svg' %}" alt="" class="img-fluid">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+  <section class="">
+    <div class="container">
+      <div class="sub_head">
+        <h2 class="subhead-text">
+          Our Amenities
+        </h2>
+      </div>
+    </div>
+    <div class="carouse-main">
+      <section class="carousel-cur">
+        <div id="wrapper">
+          <div id="top-oval"></div>
+          <div id="strip-w" class="box-scroll">
+            <div id="srip-item">
+              <img src="{% static 'images/sl-1.svg' %}" alt="" class="img-fluid">
+              <span>Fully Furnished</span>
+            </div>
+            <div id="srip-item">
+              <img src="{% static 'images/sl-2.svg' %}" alt="" class="img-fluid">
+              <span>Individual Swimming pool</span>
+            </div>
+            <div id="srip-item">
+              <img src="{% static 'images/sl-3.svg' %}" alt="" class="img-fluid">
+              <span>24/7 Security System</span>
+            </div>
+            <div id="srip-item">
+              <img src="{% static 'images/indoor-statium.svg' %}" alt="" class="img-fluid">
+              <span>24/7 Indoor Stadium</span>
+            </div>
+            <div id="srip-item">
+              <img src="{% static 'images/children-park.svg' %}" alt="" class="img-fluid">
+              <span>24/7 Childrens Park </span>
+            </div>
+            <div id="srip-item">
+              <img src="{% static 'images/hometheater.svg' %}" alt="" class="img-fluid">
+              <span>Home Theatre </span>
+            </div>
+            <div id="srip-item">
+              <img src="{% static 'images/sl-1.svg' %}" alt="" class="img-fluid">
+              <span>Fully Furnished</span>
+            </div>
+            <div id="srip-item">
+              <img src="{% static 'images/sl-2.svg' %}" alt="" class="img-fluid">
+              <span>Individual Swimming pool</span>
+            </div>
+            <div id="srip-item">
+              <img src="{% static 'images/sl-3.svg' %}" alt="" class="img-fluid">
+              <span>24/7 Security System</span>
+            </div>
+            <div id="srip-item">
+              <img src="{% static 'images/indoor-statium.svg' %}" alt="" class="img-fluid">
+              <span>24/7 Indoor Stadium</span>
+            </div>
+            <div id="srip-item">
+              <img src="{% static 'images/children-park.svg' %}" alt="" class="img-fluid">
+              <span>24/7 Childrens Park </span>
+            </div>
+            <div id="srip-item">
+              <img src="{% static 'images/hometheater.svg' %}" alt="" class="img-fluid">
+              <span>Home Theatre </span>
+            </div>
+
+          </div>
+          <div id="bottom-oval"></div>
+        </div>
+      </section>
+    </div>
+  </section>
+  <div class="mob-padding">
+    <section>
+      <div class="container">
+        <div class="row">
+
+          <div class="col-md-6">
+            <div class="sub_head">
+              <h2 class="subhead-text">
+                PROPERTY SPOTLIGHT
+              </h2>
+            </div>
+            <h5 class="video-con" style="margin-top: 100px;">
+              Assisting individuals in locating the appropriate <br> real estate.
+            </h5>
+          </div>
+          <div class="col-md-6">
+            <img src="{% static 'images/video-demo.svg' %}" alt="" class="img-fluid">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="container">
+        <div class="sub_head ">
+          <h2 class="subhead-text">
+            Our Gallery
+          </h2>
+        </div>
+        <div class="row scroll-behave" style="margin-top: 100px;">
+
+          <div class="f-sticky">
+            <div class="sticky-gallery">
+              <div class="col-md-6">
+                <div class="box-img">
+                  <img src="{% static 'images/sticky-1.svg' %}" alt="" class="img-fluid">
+                </div>
+              </div>
+              <div class="col-md-6 bg-white">
+                <h5 class="video-con px-3">
+                  Assisting individuals in locating the appropriate 1<br> real estate.
+                </h5>
+              </div>
+            </div>
+
+            <div class="sticky-gallery-2">
+
+              <div class="col-md-6 bg-white">
+                <h5 class="video-con px-3">
+                  Assisting individuals in locating the appropriate 2<br> real estate.
+                </h5>
+              </div>
+              <div class="col-md-6 ">
+                <div class="box-img">
+                  <img src="{% static 'images/second-gall.svg' %}" alt="" class="img-fluid">
+                </div>
+              </div>
+            </div>
+            <div class="sticky-gallery-3">
+              <div class="col-md-6">
+                <div class="box-img">
+                  <img src="{% static 'images/sticky-1.svg' %}" alt="" class="img-fluid">
+                </div>
+              </div>
+              <div class="col-md-6 bg-white">
+                <h5 class="video-con px-3">
+                  Assisting individuals in locating the appropriate 3 <br> real estate.
+                </h5>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <section class="">
+      <div class="container testi-more-bg">
+        <div class="row">
+          <div class="col-md-1"></div>
+          <div class="col-md-10">
+            <div class="sub_head mt-4">
+              <h2 class="subhead-text">
+                What Our Customers <br>
+                Are Saying
+              </h2>
+            </div>
+
+
+            <div class="testimonial">
+              <div class="testimonial-pic">
+                <img
+                  src="https://raw.githubusercontent.com/zouraiz523/Testimonial-Slider-/main/Animated%20Testimonial%20Slider/1.png"
+                  class="user-pic active-pic" onclick="showReview()">
+                <img
+                  src="https://raw.githubusercontent.com/zouraiz523/Testimonial-Slider-/main/Animated%20Testimonial%20Slider/2.png"
+                  class="user-pic" onclick="showReview()">
+                <img
+                  src="https://raw.githubusercontent.com/zouraiz523/Testimonial-Slider-/main/Animated%20Testimonial%20Slider/3.png"
+                  class="user-pic" onclick="showReview()">
+                <img
+                  src="https://raw.githubusercontent.com/zouraiz523/Testimonial-Slider-/main/Animated%20Testimonial%20Slider/1.png"
+                  class="user-pic" onclick="showReview()">
+                <img
+                  src="https://raw.githubusercontent.com/zouraiz523/Testimonial-Slider-/main/Animated%20Testimonial%20Slider/2.png"
+                  class="user-pic" onclick="showReview()">
+              </div>
+              <div class="testimonial-text">
+                <div class="user-text active-text">
+                  <i class="fas fa-quote-left"></i>
+                  <p>
+                    I think this platform is great overall, the only reak issue I've been dealing with is that after
+                    watching a real or sometimes just a regular video, thefeed resets when exited and I cycle through a
+                    lot of the same posts.
+                  </p>
+                  <span>JOHN RYAN, CEO HUMBLE</span>
+                </div>
+                <div class="user-text">
+                  <i class="fas fa-quote-left"></i>
+                  <p>
+                    I think this platform is great overall, the only reak issue I've been dealing with is that after
+                    watching a real or sometimes just a regular video, thefeed resets when exited and I cycle through a
+                    lot of the same posts.
+                  </p>
+                  <span>ELISABETH RYAN, CEO HUMBLE</span>
+                </div>
+                <div class="user-text">
+                  <i class="fas fa-quote-left"></i>
+                  <p>
+                    I think this platform is great overall, the only reak issue I've been dealing with is that after
+                    watching a real or sometimes just a regular video, thefeed resets when exited and I cycle through a
+                    lot of the same posts.
+                  </p>
+                  <span>RYAN FLOWER, CEO HUMBLE</span>
+                </div>
+                <div class="user-text">
+                  <i class="fas fa-quote-left"></i>
+                  <p>
+                    I think this platform is great overall, the only reak issue I've been dealing with is that after
+                    watching a real or sometimes just a regular video, thefeed resets when exited and I cycle through a
+                    lot of the same posts.
+                  </p>
+                  <span>PARKER RAY, CEO HUMBLE</span>
+                </div>
+                <div class="user-text">
+                  <i class="fas fa-quote-left"></i>
+                  <p>
+                    I think this platform is great overall, the only reak issue I've been dealing with is that after
+                    watching a real or sometimes just a regular video, thefeed resets when exited and I cycle through a
+                    lot of the same posts.
+                  </p>
+                  <span>MARRY HUE, CEO HUMBLE</span>
+                </div>
+              </div>
+
+            </div>
+          </div>
+          <!-- <div class="options" style="margin-top: 100px;">
+              <div class="option active" style="color: #ECC3A3;">
+                <div class="shadow"></div>
+                <div class="label">
+                  <div class="comments">
+
+                    <p><span class="fs-1">"</span>
+                      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga neque dolor modi incidunt sunt iste
+                      corrupti quae sint atque cumque?</p>
+                  </div>
+                  <div class="icon">
+                    <img src="{%static 'images/slider-1.svg' %}" alt="" class="icon-img">
+                  </div>
+                  <div class="info" style="color: #513c25;">
+                    <div class="main">Blonkisoaz</div>
+                    <div class="sub">Omuke trughte a otufta</div>
+                  </div>
+                </div>
+              </div>
+              <div class="option" style="color: #ECC3A3;">
+                <div class="shadow"></div>
+                <div class="label">
+                  <div class="comments">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga neque dolor modi incidunt sunt
+                      iste corrupti quae sint atque cumque?</p>
+                  </div>
+                  <div class="icon">
+                    <img src="{% static 'images/slider-2.svg' %}" alt="">
+                  </div>
+                  <div class="info"style="color: #513c25;">
+                    <div class="main">Oretemauw</div>
+                    <div class="sub">Omuke trughte a otufta</div>
+                  </div>
+                </div>
+              </div>
+              <div class="option" style="color: #ECC3A3;">
+                <div class="shadow"></div>
+                <div class="label">
+                  <div class="comments">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga neque dolor modi incidunt sunt
+                      iste corrupti quae sint atque cumque?</p>
+                  </div>
+                  <div class="icon">
+                    <img src="{% static 'images/slider-3.svg' %}" alt="">
+                  </div>
+                  <div class="info"style="color: #513c25;">
+                    <div class="main">Iteresuselle</div>
+                    <div class="sub">Omuke trughte a otufta</div>
+                  </div>
+                </div>
+              </div>
+              <div class="option" style="color: #ECC3A3;">
+                <div class="shadow"></div>
+                <div class="label">
+                  <div class="comments">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga neque dolor modi incidunt sunt
+                      iste corrupti quae sint atque cumque?</p>
+                  </div>
+                  <div class="icon">
+                    <img src="{% static 'images/slider-4.svg' %}" alt="">
+                  </div>
+                  <div class="info"style="color: #513c25;">
+                    <div class="main">Idiefe</div>
+                    <div class="sub">Omuke trughte a otufta</div>
+                  </div>
+                </div>
+              </div>
+              <div class="option" style="color: #ECC3A3;">
+                <div class="shadow"></div>
+                <div class="label">
+                  <div class="comments">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga neque dolor modi incidunt sunt
+                      iste corrupti quae sint atque cumque?</p>
+                  </div>
+                  <div class="icon">
+                    <img src="{%static 'images/slider-5.svg' %}" alt="">
+                  </div>
+                  <div class="info"style="color: #513c25;">
+                    <div class="main">Inatethi</div>
+                    <div class="sub">Omuke trughte a otufta</div>
+                  </div>
+                </div>
+              </div>
+            </div> -->
+          <div class="mob-testi" style="margin-top: 100px;">
+            <div id="carouselExampleControls" class="carousel  slide testi" data-bs-ride="carousel">
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <div class="row" style="margin-top: 100px;">
+                    <div class="col-md-1"></div>
+                    <div class="col-md-10">
+                      <div class="main-slide-1">
+                        <div class="img-slider">
+                          <img src="{% static 'images/slider-1.svg' %}" alt="" class="img-fluid">
+                          <img src="{% static 'images/slider-3.svg' %}" alt="" class="img-fluid">
+                          <img src="{% static 'images/slider-2.svg' %}" alt="" class="img-fluid">
+                          <img src="{% static 'images/slider-4.svg' %}" alt="" class="img-fluid">
+                          <img src="{% static 'images/slider-5.svg' %}" alt="" class="img-fluid">
+                        </div>
+                        <div class="text-center">
+                          <h5 class="my-3">Raina</h5>
+                          <p class="rateing">
+                            <img src="{% static 'images/star-yellow.svg'%}" alt="" class="img-fluid">
+                            <img src="{% static 'images/star-yellow.svg'%}" alt="" class="img-fluid">
+                            <img src="{% static 'images/star-yellow.svg'%}" alt="" class="img-fluid">
+                            <img src="{% static 'images/star-yellow.svg'%}" alt="" class="img-fluid">
+                            <img src="{% static 'images/star-empty.svg'%}" alt="" class="img-fluid">
+
+                          </p>
+                          <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam soluta dolores temporibus
+                            dolorem
+
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-1"></div>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <div class="row" style="margin-top: 100px;">
+                    <div class="col-md-1"></div>
+                    <div class="col-md-10">
+                      <div class="main-slide-1">
+                        <div class="img-slider">
+                          <img src="{% static 'images/slider-1.svg' %}" alt="" class="img-fluid">
+                          <img src="{% static 'images/slider-2.svg' %}" alt="" class="img-fluid">
+                          <img src="{% static 'images/slider-3.svg' %}" alt="" class="img-fluid">
+                          <img src="{% static 'images/slider-4.svg' %}" alt="" class="img-fluid">
+                          <img src="{% static 'images/slider-5.svg' %}" alt="" class="img-fluid">
+                        </div>
+                        <div class="text-center">
+                          <h5 class="my-3">Shall</h5>
+                          <p class="rateing">
+                            <img src="{% static 'images/star-yellow.svg'%}" alt="" class="img-fluid">
+                            <img src="{% static 'images/star-yellow.svg'%}" alt="" class="img-fluid">
+                            <img src="{% static 'images/star-yellow.svg'%}" alt="" class="img-fluid">
+                            <img src="{% static 'images/star-yellow.svg'%}" alt="" class="img-fluid">
+                            <img src="{% static 'images/star-empty.svg'%}" alt="" class="img-fluid">
+
+                          </p>
+                          <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam soluta dolores temporibus
+                            dolorem
+
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-1"></div>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <div class="row" style="margin-top: 100px;">
+                    <div class="col-md-1"></div>
+                    <div class="col-md-10">
+                      <div class="main-slide-1">
+                        <div class="img-slider">
+                          <img src="{% static 'images/slider-3.svg' %}" alt="" class="img-fluid">
+                          <img src="{% static 'images/slider-2.svg' %}" alt="" class="img-fluid">
+                          <img src="{% static 'images/slider-1.svg' %}" alt="" class="img-fluid">
+                          <img src="{% static 'images/slider-4.svg' %}" alt="" class="img-fluid">
+                          <img src="{% static 'images/slider-5.svg' %}" alt="" class="img-fluid">
+                        </div>
+                        <div class="text-center">
+                          <h5 class="my-3">Suresh Raina</h5>
+                          <p class="rateing">
+                            <img src="{% static 'images/star-yellow.svg'%}" alt="" class="img-fluid">
+                            <img src="{% static 'images/star-yellow.svg'%}" alt="" class="img-fluid">
+                            <img src="{% static 'images/star-yellow.svg'%}" alt="" class="img-fluid">
+                            <img src="{% static 'images/star-yellow.svg'%}" alt="" class="img-fluid">
+                            <img src="{% static 'images/star-empty.svg'%}" alt="" class="img-fluid">
+
+                          </p>
+                          <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam soluta dolores temporibus
+                            dolorem
+
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-1"></div>
+                  </div>
+                </div>
+              </div>
+              <div class="testi-slider-btn">
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
+                  data-bs-slide="prev">
+                  <span class="" aria-hidden="true"><img src="{% static 'images/arrow-ri.svg' %}" alt="xf"
+                      class="prev"></span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
+                  data-bs-slide="next">
+                  <span class="" aria-hidden="true"><img src="{% static 'images/arrow-ri.svg' %}" alt="xf"
+                      class="next"></span>
+
+                </button>
+              </div>
+            </div>
+
+
+          </div>
+          <div class="col-md-1"></div>
+        </div>
+      </div>
+
+  </div>
+ 
+  </section>
+
+
+
+
+
+
+
+
+  </div>
+  <footer>
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-6 col-sm-6 col-md-2">
+          <ul class="footer-list">
+            <h5>Quick Links</h5>
+            <li><a href="">Home</a></li>
+            <li><a href="">About</a></li>
+            <li><a href="">Listings</a></li>
+            <li><a href="">Services</a></li>
+            <li><a href="">Documentation</a></li>
+            <li><a href="">License</a></li>
+          </ul>
+        </div>
+        <div class="col-xs-6 col-sm-6 col-md-2">
+          <ul class="footer-list">
+            <h5>Discovery</h5>
+            <li><a href="">Coimbatore</a></li>
+            <li><a href="">Erode</a></li>
+            <li><a href="">Tirupur</a></li>
+          </ul>
+        </div>
+        <div class="col-md-3 footer-address">
+          <h5>Ps Castle</h5>
+          <p>2728 Hickory Street Salt Erode 84104</p>
+          <a href="">
+            <p class="social-imgs"><span><img src="{% static 'images/social-icon-1.svg' %}" alt=""></span>
+              +1206-214-2298</p>
+          </a>
+          <a href="">
+            <p class="social-imgs"> <span><img src="{% static 'images/mail-icon.svg' %}" alt=""></span>
+              Suppor@pscastle.com</p>
+          </a>
+          <div class="social-icons">
+            <a href=""><i class="fa-brands fa-google"></i></a>
+            <a href=""><i class="fa-brands fa-twitter"></i></a>
+            <a href="">
+              <i class="fa-brands fa-instagram"></i>
+            </a>
+          </div>
+        </div>
+        <div class="col-md-1"></div>
+        <div class="col-md-4">
+          <img src="{% static 'images/footer-img.svg' %}" alt="" class="img-fluid footer-imgs">
+        </div>
+      </div>
+    </div>
+  </footer>
+  <div class="footer-bottom">
+    <div class="container">
+      <div class="footer-line">
+        <p class="footer-bottom-left">
+          <span>© Copyright ©2023 PS Castle. All Rights Reserved</span>
+        </p>
+        <p class="footer-bottom-right">
+          <!-- <span><a href="">Terms and Conditions</a></span> -->
+          <span><a href="">Privacy Policy</a></span>
+        </p>
+      </div>
+    </div>
+  </div>
+  <!-- hero page end -->
+
+  <!-- script owl -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+
+  <!-- script owl -->
+
+  <!-- script links -->
+  <script src="{% static 'js/main.js' %}"></script>
+  <script src="{%static 'js/bootstrap.min.js'%}"></script>
+  <script src="{%static 'js/bootstrap.bundle.js'%}"></script>
+  <script src="{% static 'js/all.min.js' %}"></script>
+  <script src="{% static 'js/fontawesome.min.js' %}"></script>
+  <!-- script links -->
+  <script>
+    const navbarNav = document.getElementById('navbarNav')
+    const actBtn = document.querySelector('.act-btn')
+    const errorBtn = document.querySelector('.error-btn')
+    const nav = document.querySelector('nav')
+    actBtn.addEventListener('click', () => {
+      errorBtn.style.display = 'block'
+      actBtn.style.display = 'none'
+      nav.style.width = '100%'
+      backgroundColor = '#f7f6f1'
+    })
+    errorBtn.addEventListener('click', () => {
+      actBtn.style.display = 'block'
+      errorBtn.style.display = 'none'
+    })
+
+
+    // --------
+
+    const focusInp = document.querySelector('.focus-inp1')
+    const labelFocus = document.querySelector('.label-focus1')
+    const focusInp2 = document.querySelector('.focus-inp2')
+    const labelFocus2 = document.querySelector('.label-focus2')
+    const focusInp3 = document.querySelector('.focus-inp3')
+    const labelFocus3 = document.querySelector('.label-focus3')
+    const focusInp4 = document.querySelector('.focus-inp4')
+    const labelFocus4 = document.querySelector('.label-focus4')
+    const focusInp5 = document.querySelector('.focus-inp5')
+    const labelFocus5 = document.querySelector('.label-focus5')
+    focusInp.addEventListener('click', () => {
+      labelFocus.style.top = '-20px'
+      labelFocus.style.backgroundColor = '#fff'
+      labelFocus.style.fontSize = '13px'
+      labelFocus.style.color = '#828282'
+    })
+    focusInp2.addEventListener('click', () => {
+      labelFocus2.style.top = '-20px'
+      labelFocus2.style.backgroundColor = '#fff'
+      labelFocus2.style.fontSize = '13px'
+      labelFocus2.style.color = '#828282'
+    })
+    focusInp3.addEventListener('click', () => {
+      labelFocus3.style.top = '-20px'
+      labelFocus3.style.backgroundColor = '#fff'
+      labelFocus3.style.fontSize = '13px'
+      labelFocus3.style.color = '#828282'
+    })
+    focusInp4.addEventListener('click', () => {
+      labelFocus4.style.top = '-20px'
+      labelFocus4.style.backgroundColor = '#fff'
+      labelFocus4.style.fontSize = '13px'
+      labelFocus4.style.color = '#828282'
+    })
+    focusInp5.addEventListener('click', () => {
+      labelFocus5.style.top = '-20px'
+      labelFocus5.style.backgroundColor = '#fff'
+      labelFocus5.style.fontSize = '13px'
+      labelFocus5.style.color = '#828282'
+    })
+
+
+  </script>
+</body>
+
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- try -->
+
+
+
+
+
+
+<!-- <div id="carouselExampleControls" class="carousel  slide testi" data-bs-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <div class="row" style="margin-top: 100px;">
+                <div class="col-md-1"></div>
+                <div class="col-md-10">
+                  <div class="main-slide-1">
+                    <div class="img-slider">
+                      <img src="{% static 'images/slider-1.svg' %}" alt="" class="img-fluid">
+                      <img src="{% static 'images/slider-3.svg' %}" alt="" class="img-fluid">
+                      <img src="{% static 'images/slider-2.svg' %}" alt="" class="img-fluid">
+                      <img src="{% static 'images/slider-4.svg' %}" alt="" class="img-fluid">
+                      <img src="{% static 'images/slider-5.svg' %}" alt="" class="img-fluid">
+                    </div>
+                    <div class="text-center">
+                      <h5 class="my-3">Raina</h5>
+                      <p class="rateing">
+                        <img src="{% static 'images/star-yellow.svg'%}" alt="" class="img-fluid">
+                        <img src="{% static 'images/star-yellow.svg'%}" alt="" class="img-fluid">
+                        <img src="{% static 'images/star-yellow.svg'%}" alt="" class="img-fluid">
+                        <img src="{% static 'images/star-yellow.svg'%}" alt="" class="img-fluid">
+                        <img src="{% static 'images/star-empty.svg'%}" alt="" class="img-fluid">
+
+                      </p>
+                      <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam soluta dolores temporibus
+                        dolorem
+                       
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-1"></div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="row" style="margin-top: 100px;">
+                <div class="col-md-1"></div>
+                <div class="col-md-10">
+                  <div class="main-slide-1">
+                    <div class="img-slider">
+                      <img src="{% static 'images/slider-1.svg' %}" alt="" class="img-fluid">
+                      <img src="{% static 'images/slider-2.svg' %}" alt="" class="img-fluid">
+                      <img src="{% static 'images/slider-3.svg' %}" alt="" class="img-fluid">
+                      <img src="{% static 'images/slider-4.svg' %}" alt="" class="img-fluid">
+                      <img src="{% static 'images/slider-5.svg' %}" alt="" class="img-fluid">
+                    </div>
+                    <div class="text-center">
+                      <h5 class="my-3">Shall</h5>
+                      <p class="rateing">
+                        <img src="{% static 'images/star-yellow.svg'%}" alt="" class="img-fluid">
+                        <img src="{% static 'images/star-yellow.svg'%}" alt="" class="img-fluid">
+                        <img src="{% static 'images/star-yellow.svg'%}" alt="" class="img-fluid">
+                        <img src="{% static 'images/star-yellow.svg'%}" alt="" class="img-fluid">
+                        <img src="{% static 'images/star-empty.svg'%}" alt="" class="img-fluid">
+
+                      </p>
+                      <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam soluta dolores temporibus
+                        dolorem
+                    
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-1"></div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="row" style="margin-top: 100px;">
+                <div class="col-md-1"></div>
+                <div class="col-md-10">
+                  <div class="main-slide-1">
+                    <div class="img-slider">
+                      <img src="{% static 'images/slider-3.svg' %}" alt="" class="img-fluid">
+                      <img src="{% static 'images/slider-2.svg' %}" alt="" class="img-fluid">
+                      <img src="{% static 'images/slider-1.svg' %}" alt="" class="img-fluid">
+                      <img src="{% static 'images/slider-4.svg' %}" alt="" class="img-fluid">
+                      <img src="{% static 'images/slider-5.svg' %}" alt="" class="img-fluid">
+                    </div>
+                    <div class="text-center">
+                      <h5 class="my-3">Suresh Raina</h5>
+                      <p class="rateing">
+                        <img src="{% static 'images/star-yellow.svg'%}" alt="" class="img-fluid">
+                        <img src="{% static 'images/star-yellow.svg'%}" alt="" class="img-fluid">
+                        <img src="{% static 'images/star-yellow.svg'%}" alt="" class="img-fluid">
+                        <img src="{% static 'images/star-yellow.svg'%}" alt="" class="img-fluid">
+                        <img src="{% static 'images/star-empty.svg'%}" alt="" class="img-fluid">
+
+                      </p>
+                      <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam soluta dolores temporibus
+                        dolorem
+                        
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-1"></div>
+              </div>
+            </div>
+          </div>
+          <div class="testi-slider-btn">
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
+              data-bs-slide="prev">
+              <span class="" aria-hidden="true"><img src="{% static 'images/arrow-ri.svg' %}" alt="xf"
+                  class="prev"></span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
+              data-bs-slide="next">
+              <span class="" aria-hidden="true"><img src="{% static 'images/arrow-ri.svg' %}" alt="xf"
+                  class="next"></span>
+
+            </button>
+          </div>
+        </div> -->
+
+
+<!--  -->
